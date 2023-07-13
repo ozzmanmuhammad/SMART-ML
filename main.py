@@ -3,11 +3,7 @@ import os
 
 import streamlit as st
 import pandas as pd
-import numpy as np
-import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
-
-import plotly.express as px
 
 from pycaret.classification import ClassificationExperiment
 from pycaret.regression import RegressionExperiment
@@ -33,7 +29,7 @@ with st.sidebar:
             "dataset,"
             " perform exploratory data analysis, and train machine learning models which can be for classification,"
             " regression, clustering, or anomaly detection.")
-   
+
 if choices == 'Dataset':
     st.title('Upload your CSV dataset: :smile:')
     file = st.file_uploader("Upload you dataset file", type=["csv"])
