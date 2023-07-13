@@ -6,6 +6,7 @@ SMART-ML is a user-friendly Streamlit application that simplifies machine learni
 
 ## Live Application
 You can also access the live version of the application hosted on Streamlit Sharing by visiting https://smart-ml.streamlit.app/.
+The app may crash because of the stream cloud resources limitation.
 
 ## Features
 
