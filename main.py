@@ -3,6 +3,7 @@ import os
 
 import streamlit as st
 import pandas as pd
+import pandas_profiling
 from streamlit_pandas_profiling import st_profile_report
 
 from pycaret.classification import ClassificationExperiment
@@ -40,8 +41,8 @@ if choices == 'Dataset':
 
 if choices == 'EDA':
     st.title('Exploratory Data Analysis: :bar_chart:')
-    profile_df = df.profile_report()
-    st_profile_report(profile_df)
+    # profile_df = df.profile_report()
+    st_profile_report(pandas_profiling.ProfileReport(df))
 
 if choices == 'Modeling':
 
